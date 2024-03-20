@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function basicMethod(){
+var basicArray = [10,12,14,2,6,24,56,78,62,66,96,99];
+basicArray.forEach(function(getValue,getIndex){
+console.log("My index is "+getIndex+", My value is "+getValue);
+});
+}
+</script>
+</head>
+<body>
+<div id="output"></div>
+
+<button onclick="basicMethod()">Click</button>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function basicMethod(){
+var students = ["bhanupriya","bhaskar","gopi","venkat"];
+var result='';
+for(var i=0;i<students.length;i++){
+result = result+"<li>"+students[i]+"</li>"
+}
+document.getElementById('listparent').innerHTML = result;
+}
+
+</script>
+</head>
+<body>
+<ul id="listparent">
+	
+</ul>
+
+<button onclick="basicMethod()">Click</button>
+</body>
+</html>

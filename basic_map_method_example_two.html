@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function basicMethod(){
+var students = ["bhanupriya","bhaskar","gopi","venkat"];
+
+
+var map_results=students.map(getStu=>"<li>"+getStu+"</li>");
+var remove_commas_results = map_results.join("");
+document.getElementById('listparent').innerHTML = remove_commas_results;
+}
+
+</script>
+</head>
+<body>
+<ul id="listparent">
+	
+</ul>
+
+<button onclick="basicMethod()">Click</button>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function basicMethod(){
+var studentsObj = [
+{
+"id":1,
+"firstname":"sanket",
+"lastname":"bhole",
+"email":"test@test.com"
+},
+{
+"id":2,
+"firstname":"kunal",
+"lastname":"sarode",
+"email":"test2@test.com"
+},
+{
+"id":3,
+"firstname":"madan",
+"lastname":"mohan",
+"email":"test3@test.com"
+},
+{
+"id":4,
+"firstname":"karunakar",
+"lastname":"reddy",
+"email":"test4@test.com"
+}
+];
+
+
+
+var map_results = studentsObj.map(stuObj=>"<li>"+stuObj.firstname+"</li>"
+);
+var remove_commas_results = map_results.join("");
+document.getElementById('listparent').innerHTML = remove_commas_results;
+}
+
+</script>
+</head>
+<body>
+<ul id="listparent"></ul>
+
+<button onclick="basicMethod()">Click</button>
+</body>
+</html>

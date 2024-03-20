@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function basicMethod(){
+//js object
+var basicObj = {
+id:1,
+firstname:"venkat",
+lastname:"pathapati",
+email:"venkat@gmail.com"
+}
+
+//json object
+var basicJsonObj = {
+    "id": 1,
+    "firstname": "venkat",
+    "lastname": "pathapati",
+    "email": "venkat@gmail.com"
+}
+
+var stuObj = {
+	id:1,
+	firstname:"venkat",
+	lastname:"pathapati",
+	email:"venkat@gmail.com"
+}
+console.log(stuObj);
+var convert_into_json_object = JSON.stringify(stuObj);
+console.log(convert_into_json_object);
+var convert_json_into_js_object = JSON.parse(convert_into_json_object);
+console.log(convert_json_into_js_object);
+}
+
+</script>
+</head>
+<body>
+<div id="output"></div>
+
+<button onclick="basicMethod()">Click</button>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function basicMethod(){
+var dateObj = new Date();
+
+var get_day = dateObj.getDay();
+var result;
+switch(get_day){
+	case 0:
+	result = "Sunday";
+	break;
+	
+	case 1:
+	result = "Monday";
+	break;
+	
+	case 2:
+	result = "Tuesday";
+	break;
+	
+	case 3:
+	result = "Wednesday";
+	break;
+	
+	case 4:
+	result = "Thursday";
+	break;
+	
+	case 5:
+	result = "Friday";
+	break;
+	
+	case 6:
+	result = "Saturday";
+	break;
+}
+document.getElementById('output').innerHTML = "Today is "+result;
+}
+
+</script>
+</head>
+<body>
+<div id="output"></div>
+
+<button onclick="basicMethod()">Click</button>
+</body>
+</html>

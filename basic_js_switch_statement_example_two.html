@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function displayDesignation(){
+var username = document.getElementById('user_data').value;
+var result;
+switch(username.toLowerCase()){
+	case "ramesh":
+	result = username+" is a Rectjs Teacher";
+	break;
+	
+	case "gopi":
+	result = username+" is a Reactjs Student";
+	break;
+	
+	case "prabhas":
+	result = username+" is Indian Movie Superstar";
+	break;
+	
+	case "dhoni":
+	result = username+" was one of the best captains for Indian Cricket Team";
+	break;
+	
+	default:
+	result = "Dear "+username+" we don't have your information at present";
+	break;
+}
+document.getElementById('output').innerHTML  = result;
+}
+
+</script>
+</head>
+<body>
+<div id="output"></div>
+First Value : <input type="text" id="user_data"><br><br>
+<button onclick="displayDesignation()">Click</button>
+</body>
+</html>

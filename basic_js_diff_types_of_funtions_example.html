@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function add(){
+console.log('this is naming or normal add method');
+}
+
+function add(a,b){
+console.log(a+b);
+}
+
+var add = function(){
+console.log('this is anonymous add method');
+}
+
+var add = function(a,b){
+console.log(a+b);
+}
+
+var add = ()=>{
+console.log("this is lambda add method");
+}
+
+var add = (a,b)=>{
+console.log(a+b);
+}
+
+var sample= a=>a;
+
+console.log(sample(6))
+</script>
+</head>
+<body>
+
+</body>
+</html>

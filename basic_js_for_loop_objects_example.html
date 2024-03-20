@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function basicMethod(){
+var studentsObj = [
+{
+"id":1,
+"firstname":"sanket",
+"lastname":"bhole",
+"email":"test@test.com"
+},
+{
+"id":2,
+"firstname":"kunal",
+"lastname":"sarode",
+"email":"test2@test.com"
+},
+{
+"id":3,
+"firstname":"madan",
+"lastname":"mohan",
+"email":"test3@test.com"
+},
+{
+"id":4,
+"firstname":"karunakar",
+"lastname":"reddy",
+"email":"test4@test.com"
+}
+];
+var result='';
+for(var i=0;i<studentsObj.length;i++){
+result = result+"<li>"+studentsObj[i].firstname+"</li>"
+}
+document.getElementById('listparent').innerHTML = result;
+}
+
+</script>
+</head>
+<body>
+<ul id="listparent"></ul>
+
+<button onclick="basicMethod()">Click</button>
+</body>
+</html>

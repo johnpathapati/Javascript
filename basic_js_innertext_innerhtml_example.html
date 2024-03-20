@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function changeTextOne(){
+document.getElementById('output1').innerText = "I am a Teacher";
+}
+function changeTextTwo(){
+document.getElementById('output2').innerText = "<h3>I am a Teacher</h3>";
+}
+function changeImageOne(){
+document.getElementById('output3').innerText = "<img src='images/corporate.jpg' width=200 height=200>";
+}
+function changeTextThree(){
+document.getElementById('output4').innerHTML = "I am a Teacher";
+}
+function changeTextFour(){
+document.getElementById('output5').innerHTML = "<h3>I am a Teacher</h3>";
+}
+function changeImageTwo(){
+document.getElementById('output6').innerHTML = "<img src='images/corporate.jpg' width=200 height=200>";
+}
+
+</script>
+</head>
+<body>
+<div id="output1">I am Venkat</div>
+<button onclick="changeTextOne()">Click</button>
+
+<div id="output2">
+	<h2>I am Venkat</h2>
+</div>
+<button onclick="changeTextTwo()">Click</button>
+
+<div id="output3">
+	<img src="images/car_one.png" width=200 height=200>
+</div>
+<button onclick="changeImageOne()">Click</button>
+
+<div id="output4">I am Venkat</div>
+<button onclick="changeTextThree()">Click</button>
+
+<div id="output5">
+	<h2>I am Venkat</h2>
+</div>
+<button onclick="changeTextFour()">Click</button>
+
+<div id="output6">
+	<img src="images/car_one.png" width=200 height=200>
+</div>
+<button onclick="changeImageTwo()">Click</button>
+</body>
+</html>

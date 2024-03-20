@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function copyValue(){
+var firstname = document.getElementById('fname').value;
+document.getElementById('cname').value = firstname;
+}
+</script>
+</head>
+<body>
+First Name : <input type="text" id="fname" onkeyup="copyValue()"><br><br>
+Copy Name : <input type="text" id="cname"><br><br>
+
+</body>
+</html>

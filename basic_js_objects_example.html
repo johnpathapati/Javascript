@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function basicMethod(){
+//normal json object
+var basicJsonObj = {
+    "id": 1,
+    "firstname": "ramesh",
+    "lastname": "babu",
+    "email": "rameshonlinetrainer01@gmail.com"
+}
+
+//document.getElementById('output').innerHTML = "My name is "+basicJsonObj.firstname;
+
+//nested json object
+var basicJsonNestedObj = {
+    "id": 1,
+    "firstname": "ramesh",
+    "lastname": "babu",
+    "email": "rameshonlinetrainer01@gmail.com",
+	"address":{
+		"city":"vinukonda",
+		"state":"andhra pradesh",
+		"country":"india"
+	}
+}
+//document.getElementById('output').innerHTML = "My name is "+basicJsonNestedObj.firstname+", I am from "+basicJsonNestedObj.address.city;
+
+//document.getElementById('output').innerHTML = `My name is ${basicJsonNestedObj.firstname}, I am from ${basicJsonNestedObj.address.city}`;
+
+//array in an object
+var basicJsonArrayNestedObj = {
+    "id": 1,
+    "firstname": "ramesh",
+    "lastname": "babu",
+    "email": "rameshonlinetrainer01@gmail.com",
+	"address":{
+		"city":"vinukonda",
+		"state":"andhra pradesh",
+		"country":"india"
+	},
+	"technical_skills":["html5","css3","js","reactjs","angular"]
+}
+
+document.getElementById('output').innerHTML = `My name is ${basicJsonArrayNestedObj.firstname}, I am an ${basicJsonArrayNestedObj.technical_skills[3]} Faculty`;
+}
+
+</script>
+</head>
+<body>
+<div id="output"></div>
+
+<button onclick="basicMethod()">Click</button>
+</body>
+</html>

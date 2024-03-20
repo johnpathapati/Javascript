@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function compareValues(){
+
+var firstvalue =  parseFloat(document.getElementById('fdata').value);
+var secondvalue =  parseFloat(document.getElementById('sdata').value);
+
+if(firstvalue > secondvalue){
+alert("First Value is Highest");
+}else if(firstvalue == secondvalue){
+alert("Both are Equal");
+}else{
+alert("Second value is Highest");
+}
+}
+
+</script>
+</head>
+<body>
+First Value : <input type="text" id="fdata"><br><br>
+Second Value : <input type="text" id="sdata"><br><br>
+<button onclick="compareValues()">Click</button>
+</body>
+</html>

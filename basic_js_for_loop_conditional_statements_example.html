@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function basicMethod(){
+for(var i=1;i<=100;i++){
+if(i%3==0 && i%5 == 0){
+document.write("threefive<br>")
+}
+else if(i%3 == 0){
+document.write("three<br>");
+}else if(i%5 == 0){
+document.write("five<br>");
+}else{
+document.write(i+"<br>");
+}
+}
+}
+
+</script>
+</head>
+<body>
+<div id="output"></div>
+
+<button onclick="basicMethod()">Click</button>
+</body>
+</html>

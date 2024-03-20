@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function changeImage(){
+document.getElementById('image').src="images/corporate.jpg"
+}
+function changeImageTwo(){
+document.getElementById('image').src = "images/car_one.png"
+}
+
+</script>
+</head>
+<body>
+<img src="images/car_one.png" id="image" width="200" height="200" onmouseover="changeImage()" onmouseout="changeImageTwo()">
+</body>
+</html>

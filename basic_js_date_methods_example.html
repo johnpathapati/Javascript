@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function basicMethod(){
+var dateObj = new Date();
+var get_date = dateObj.getDate();
+var get_day = dateObj.getDay();
+var get_month = dateObj.getMonth()+1;
+
+var get_year = dateObj.getFullYear();
+var datestamp = dateObj.toLocaleDateString();
+
+var get_hours = dateObj.getHours();
+
+var get_minutes = dateObj.getMinutes();
+
+var get_seconds = dateObj.getSeconds();
+
+var get_milliseconds = dateObj.getMilliseconds();
+
+var datestring = new Date('2029 10 30').toUTCString();
+
+document.getElementById('output').innerHTML = datestring;
+}
+
+</script>
+</head>
+<body>
+<div id="output"></div>
+
+<button onclick="basicMethod()">Click</button>
+</body>
+</html>

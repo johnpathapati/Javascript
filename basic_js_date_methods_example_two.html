@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Basic JS Example</title>
+<script>
+function basicMethod(){
+var dateObj = new Date(2029, 2, 10);
+
+var month_name = dateObj.toLocaleString('default',{month:'narrow'});
+
+document.getElementById('output').innerHTML = month_name;
+}
+
+</script>
+</head>
+<body>
+<div id="output"></div>
+<button onclick="basicMethod()">Click</button>
+
+</body>
+</html>
+

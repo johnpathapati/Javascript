@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function changeBackgroundColor(){
+document.bgColor = "orange";
+}
+function changeBackgroundColorTwo(){
+document.bgColor = "green";
+}
+</script>
+</head>
+<body>
+<button onmouseover="changeBackgroundColor()">Mouse Over</button>
+<button onmouseout="changeBackgroundColorTwo()">Mouse Out</button>
+<button onmouseover="changeBackgroundColor()" onmouseout="changeBackgroundColorTwo()">Mouse Over/Out</button>
+</body>
+</html>

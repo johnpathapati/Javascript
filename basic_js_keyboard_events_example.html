@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function basicKeyUpMethod(){
+var getValue = document.getElementById('key_up_txt_box').value;
+alert(getValue);
+}
+function basicKeyPressMethod(){
+var getValue = document.getElementById('key_press_txt_box').value;
+alert(getValue);
+}
+function basicKeyDownMethod(){
+var getValue = document.getElementById('key_down_txt_box').value;
+alert(getValue);
+}
+
+
+</script>
+</head>
+<body>
+Key Up : <input type="text" id="key_up_txt_box" onkeyup="basicKeyUpMethod()">
+Key Press : <input type="text" id="key_press_txt_box" onkeypress="basicKeyPressMethod()">
+Key Down : <input type="text" id="key_down_txt_box" onkeydown="basicKeyDownMethod()">
+</body>
+</html>

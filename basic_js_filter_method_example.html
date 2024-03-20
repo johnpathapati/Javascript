@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function basicMethod(){
+var basicArray = [10,12,14,2,6,24,56,78,62,66,96,99];
+basicArray.filter(function(getValue,getIndex){
+console.log("My value is "+getValue+", My Index is "+getIndex);
+});
+}
+
+</script>
+</head>
+<body>
+<div id="output"></div>
+
+<button onclick="basicMethod()">Click</button>
+</body>
+</html>

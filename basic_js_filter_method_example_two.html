@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic JS Example</title>
+<meta charset="UTF-8">
+<script>
+function basicMethod(){
+var basicArray = [10,12,14,2,-6,24,-56,78,-62,66,96,99];
+
+
+var filter_results = basicArray.filter((getValue)=>{
+
+return getValue>0;
+
+});
+var map_results = filter_results.map((get_pos_value)=>{
+return "<li>"+get_pos_value+"</li>"
+});
+var remove_commans_results = map_results.join("");
+document.getElementById('listparent').innerHTML = remove_commans_results;
+}
+
+</script>
+</head>
+<body>
+<ul id="listparent"></ul>
+
+<button onclick="basicMethod()">Click</button>
+</body>
+</html>
